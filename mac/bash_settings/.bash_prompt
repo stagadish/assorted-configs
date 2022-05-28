@@ -1,0 +1,25 @@
+#! /bin/sh
+
+if [ -f /usr/local/git/current/share/git-core/git-prompt.sh ]; then                                                                                         
+. /usr/local/git/current/share/git-core/git-prompt.sh
+fi
+
+# Looks like:
+# [hh:mm:ss] username@host:/full/working/directory (git_branch)
+# $
+
+RESET_FONT='\[$(tput sgr0)\]'
+
+PS1='\[\033[0;93m\][\t] '		    # Yellow [hh:mm:ss] timestamps
+PS1+=$RESET_FONT
+PS1+='\[\033[01;94m\u@MacBook:\]'           # Green bold username@host
+PS1+=$RESET_FONT
+PS1+='\[\033[1;94m\]\w'                     # Blue full pwd
+PS1+=$RESET_FONT
+PS1+='\[\033[3;95m\]$(__git_ps1 " (%s)")'   # Pink italic git branch
+PS1+=$RESET_FONT
+PS1+='\[\033[1m\]\n\$ '                     # Newline prompt symbol
+PS1+=$RESET_FONT
+export PS1
+
+export PROMPT_COMMAND=""

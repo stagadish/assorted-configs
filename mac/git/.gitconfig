@@ -1,0 +1,37 @@
+[user]
+  email = gil.dekel85@gmail.com
+  name = Gil Dekel
+
+[core]
+ editor = code --wait
+
+[diff]
+  tool = default-difftool
+[difftool "default-difftool"]
+  cmd = code --new-window --wait --diff $LOCAL $REMOTE
+
+[color]
+  ui = auto
+
+[format]
+  signatureFile = "~/.signature"
+
+[commit]
+  verbose = true
+
+[alias]
+  lol = log --pretty=fuller
+	showl = show --pretty=fuller
+	rbi = rebase --interactive
+	rbe = rebase --edit-todo
+	rbc = rebase --continue
+  uc = reset HEAD^
+
+  branches = !"git for-each-ref \
+  --sort=-authordate:iso8601 \
+  --format '%(committerdate:relative)_,,,_%(HEAD)_,,,_%(refname:short)' refs/heads \
+  | awk 'BEGIN { FS = \"_,,,_\"  } ; { printf \"\\033[0m%-2s %-40s\\033[0m \\033[3;92m%s\\n\", $2, $3, $1 }'"
+
+[http]
+  cookiefile = /usr/local/google/home/gildekel/.gitcookies
+  followRedirects = true

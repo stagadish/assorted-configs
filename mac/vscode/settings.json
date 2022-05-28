@@ -1,0 +1,169 @@
+{
+  // Suggested vscode default settings for simplifying initial setup. These
+  // settings are hoped to be convenient and helpful for those beginning to use
+  // vscode with Chrome. Please modify and change as necessary.
+  // All settings are optional, but some more "optional" settings at the end
+  // are disabled by default. Feel free to enable them.
+  // Default tab size of 2, for consistency with internal codebase.
+  "editor.tabSize": 2,
+  // Do not figure out tab size from opening a file.
+  "editor.detectIndentation": false,
+  // Add a line at 80 characters.
+  "editor.rulers": [
+    80
+  ],
+  // Forces LF instead of "auto" which uses CRLF on Windows.
+  "files.eol": "\n",
+  // Trim tailing whitespace on save.
+  "files.trimTrailingWhitespace": true,
+  // Insert trimmed final new line.
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.associations": {
+    "*.grd": "xml",
+    "*.gni": "gn",
+    "*.gn": "gn",
+    "array": "cpp",
+    "atomic": "cpp",
+    "*.tcc": "cpp",
+    "cctype": "cpp",
+    "clocale": "cpp",
+    "cmath": "cpp",
+    "cstdarg": "cpp",
+    "cstddef": "cpp",
+    "cstdint": "cpp",
+    "cstdio": "cpp",
+    "cstdlib": "cpp",
+    "cstring": "cpp",
+    "cwchar": "cpp",
+    "cwctype": "cpp",
+    "deque": "cpp",
+    "forward_list": "cpp",
+    "list": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "vector": "cpp",
+    "exception": "cpp",
+    "fstream": "cpp",
+    "functional": "cpp",
+    "initializer_list": "cpp",
+    "iosfwd": "cpp",
+    "istream": "cpp",
+    "limits": "cpp",
+    "memory": "cpp",
+    "optional": "cpp",
+    "ostream": "cpp",
+    "sstream": "cpp",
+    "stdexcept": "cpp",
+    "streambuf": "cpp",
+    "string_view": "cpp",
+    "system_error": "cpp",
+    "cinttypes": "cpp",
+    "type_traits": "cpp",
+    "tuple": "cpp",
+    "typeinfo": "cpp",
+    "utility": "cpp",
+    "algorithm": "cpp",
+    "new": "cpp",
+    "numeric": "cpp",
+    "string": "cpp",
+    "ios": "cpp",
+    "iostream": "cpp",
+    "turbojpeg.h": "c",
+    "iterator": "cpp",
+    "map": "cpp",
+    "memory_resource": "cpp",
+    "__bit_reference": "cpp",
+    "__config": "cpp",
+    "__debug": "cpp",
+    "__functional_base": "cpp",
+    "__split_buffer": "cpp",
+    "set": "cpp",
+    "chrono": "cpp",
+    "ctime": "cpp",
+    "iomanip": "cpp",
+    "ratio": "cpp",
+    "__node_handle": "cpp",
+    "__tree": "cpp",
+    "*.inc": "cpp",
+    "*.mm": "cpp",
+    "bitset": "cpp",
+    "*.idl": "cpp",
+    "random": "cpp"
+  },
+
+  "files.exclude": {
+    // "out/[^D]*/": true,
+  },
+  "files.watcherExclude": {
+    // "**/out*/**": true,
+  },
+
+  // C++ clang format settings.
+  // "C_Cpp.default.includePath": [
+  //   "${workspaceFolder}",
+  //   "${workspaceFolder}/third_party/googletest/src/googletest/include"
+  // ],
+  // "C_Cpp.clang_format_path": "${workspaceFolder}/third_party/depot_tools/clang-format",
+  // "C_Cpp.clang_format_sortIncludes": true,
+  // "editor.formatOnSave": true,
+  // "editor.formatOnSaveMode": "modifications",
+
+  // Optional: Highlight current line at the left of the editor.
+  "editor.renderLineHighlight": "all",
+  // Optional: Don't automatically add closing brackets. It gets in the way.
+  "editor.autoClosingBrackets": "never",
+  // Optional: Enable a tiny 30k feet view of your doc.
+  "editor.minimap.enabled": true,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.renderCharacters": false,
+  // Optional: Don't continuously fetch remote changes.
+  //"git.autofetch": false,
+  // Optional: Do not open files in 'preview' mode. Opening a new file in can
+  //           replace an existing one in preview mode, which can be confusing.
+  "workbench.editor.enablePreview": false,
+  // Optional: Same for files opened from quick open (Ctrl+P).
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "terminal.integrated.allowChords": false,
+  "editor.fontSize": 15,
+
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "editor.renderControlCharacters": false,
+  "breadcrumbs.enabled": true,
+  "editor.tabCompletion": "on",
+  "zenMode.hideLineNumbers": false,
+  "terminal.integrated.fontSize": 15,
+  "remote.SSH.remotePlatform": {
+    "gildekel1.nyc.corp.google.com": "linux"
+  },
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.rightClickBehavior": "paste",
+  "terminal.integrated.copyOnSelection": true,
+  "workbench.sideBar.location": "left",
+  "workbench.panel.defaultLocation": "right",
+  "clangd.checkUpdates": true,
+  "clangd.onConfigChanged": "restart",
+
+  "installVSIX.force": false,
+
+  "[c]": {
+      "diffEditor.ignoreTrimWhitespace": false,
+      "editor.detectIndentation": false,
+      "editor.insertSpaces": false,
+      "editor.tabSize": 8,
+      "editor.rulers": [80],
+      "editor.wordWrap": "wordWrapColumn",
+      "editor.wordWrapColumn": 100
+  },
+  "remote.SSH.connectTimeout": 60,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "jupyter.askForKernelRestart": false,
+  "jupyter.textOutputLimit": 0,
+  "python.showStartPage": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.zoomLevel": 1,
+  "bracketPairColorizer.depreciation-notice": false
+}
