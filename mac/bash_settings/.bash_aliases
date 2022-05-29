@@ -1,6 +1,6 @@
 ##########
 # Commands
-#########
+##########
 
 # When you want to be nice :)
 alias please="sudo"
@@ -52,6 +52,3 @@ alias .1='cd ..'
 alias .2='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
-
-# Update vscode from the command line
-alias updatevscode="wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' -O /tmp/code_latest_amd64.deb && sudo dpkg -i /tmp/code_latest_amd64.deb"
