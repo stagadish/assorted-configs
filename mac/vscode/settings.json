@@ -127,8 +127,7 @@
   "terminal.integrated.allowChords": false,
   "editor.fontSize": 15,
 
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
+  "telemetry.telemetryLevel":"off",
   "editor.renderControlCharacters": false,
   "breadcrumbs.enabled": true,
   "editor.tabCompletion": "on",
@@ -158,7 +157,7 @@
   },
   "remote.SSH.connectTimeout": 60,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook"
   },
   "jupyter.askForKernelRestart": false,
   "jupyter.textOutputLimit": 0,

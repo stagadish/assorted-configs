@@ -21,10 +21,10 @@
 
 [alias]
   lol = log --pretty=fuller
-	showl = show --pretty=fuller
-	rbi = rebase --interactive
-	rbe = rebase --edit-todo
-	rbc = rebase --continue
+  showl = show --pretty=fuller
+  rbi = rebase --interactive
+  rbe = rebase --edit-todo
+  rbc = rebase --continue
   uc = reset HEAD^
 
   branches = !"git for-each-ref \
