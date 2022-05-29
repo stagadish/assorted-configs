@@ -3,9 +3,10 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.detectIndentation": false,
     "editor.insertSpaces": false,
-    // Add a line at 80 characters.
+    // Add a line at 80 and 100 characters.
     "editor.rulers": [
-      80
+      80,
+      100
     ],
     "editor.tabSize": 8,
     "editor.wordWrap": "wordWrapColumn",
